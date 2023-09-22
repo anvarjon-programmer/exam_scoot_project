@@ -89,14 +89,14 @@ header nav .navbar__btn:hover {
   color: #fcb72b;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 376px) {
   .navbar__list {
     width: 50%;
     height: 100vh;
     padding: 10px 10px;
     position: fixed;
     z-index: 2;
-    top: 11%;
+    top: 13%;
     left: 0;
     background: #333a44;
     flex-direction: column;
@@ -113,45 +113,11 @@ header nav .navbar__btn:hover {
     display: block !important;
   }
 }
-#store {
-  background-color: #495567;
-}
-#store .store__wraper {
-  padding: 102px;
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-}
-#store .store__wraper .store__wraper-title {
-  color: #fff;
-  max-width: 450px;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px; /* 100% */
-  letter-spacing: -2.143px;
-}
-#store .store__wraper .store__btn__wraper {
-  display: flex;
-  gap: 12px;
-}
-#store .store__wraper .store__btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px;
-}
-#store .store__wraper .store__btn .fa-apple {
-  font-size: 25px;
-}
-#store .store__wraper .store__btn .fa-google-play {
-  font-size: 22px;
-}
-
 footer {
   background-color: #333a44;
 }
 footer .footer__wraper {
+  padding: 35px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -178,6 +144,17 @@ footer .footer__wraper .footer__social {
 @media (max-width: 375px) {
   .footer__wraper {
     flex-direction: column;
+    gap: 12px;
+  }
+  .footer__wraper .footer__list {
+    flex-direction: column;
+  }
+  .footer__wraper .footer__social {
+    margin-top: 150px;
+    gap: 30px;
+  }
+  .footer__wraper .footer__social .social__link i {
+    font-size: 25px;
   }
 }
 #deliver {
@@ -327,6 +304,8 @@ footer .footer__wraper .footer__social {
   letter-spacing: -2.5px;
 }
 #hero .hero__item .hero__title {
+  display: flex;
+  flex-direction: column;
   max-width: 400px !important;
   position: relative;
   margin-top: 40px;
@@ -351,6 +330,7 @@ footer .footer__wraper .footer__social {
   line-height: 25px; /* 166.667% */
   border: none;
   padding: 15px 27px;
+  width: 150px;
 }
 #hero .hero__item .hero__title .hero__img {
   position: absolute;
@@ -536,5 +516,46 @@ footer .footer__wraper .footer__social {
   }
   .about__total-card-item .about__img__sid {
     max-width: 300px;
+  }
+}
+#store {
+  background-color: #495567;
+}
+#store .store__wraper {
+  padding: 102px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+#store .store__wraper .store__wraper-title {
+  color: #fff;
+  max-width: 450px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2.143px;
+}
+#store .store__wraper .store__btn__wraper {
+  display: flex;
+  gap: 12px;
+}
+#store .store__wraper .store__btn__wraper .store__btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+}
+#store .store__wraper .store__btn__wraper .store__btn .fa-apple {
+  font-size: 25px;
+}
+#store .store__wraper .store__btn__wraper .store__btn .fa-google-play {
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .store__wraper {
+    flex-direction: column;
+    width: 100%;
   }
 }

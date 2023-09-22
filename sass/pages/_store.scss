@@ -1,0 +1,41 @@
+#store {
+  background-color: #495567;
+  .store__wraper {
+    padding: 102px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    .store__wraper-title {
+      color: #fff;
+      max-width: 450px;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 100% */
+      letter-spacing: -2.143px;
+    }
+    .store__btn__wraper {
+      display: flex;
+      gap: 12px;
+      .store__btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px;
+        .fa-apple {
+          font-size: 25px;
+        }
+        .fa-google-play {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .store__wraper {
+    flex-direction: column;
+    width: 100%;
+  }
+}

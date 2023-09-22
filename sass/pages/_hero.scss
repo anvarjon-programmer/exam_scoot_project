@@ -18,6 +18,8 @@
       letter-spacing: -2.5px;
     }
     .hero__title {
+      display: flex;
+      flex-direction: column;
       max-width: 400px !important;
       position: relative;
       margin-top: 40px;
@@ -41,6 +43,7 @@
         line-height: 25px; /* 166.667% */
         border: none;
         padding: 15px 27px;
+        width: 150px;
       }
       .hero__img {
         position: absolute;

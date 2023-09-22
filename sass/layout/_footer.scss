@@ -1,41 +1,9 @@
-#store {
-  background-color: #495567;
-  .store__wraper {
-    padding: 102px;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    .store__wraper-title {
-      color: #fff;
-      max-width: 450px;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 48px; /* 100% */
-      letter-spacing: -2.143px;
-    }
-    .store__btn__wraper {
-      display: flex;
-      gap: 12px;
-    }
-    .store__btn {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 8px;
-      .fa-apple {
-        font-size: 25px;
-      }
-      .fa-google-play {
-        font-size: 22px;
-      }
-    }
-  }
-}
+
 
 footer {
   background-color: #333a44;
   .footer__wraper {
+    padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,6 +31,18 @@ footer {
 @media (max-width: 375px) {
   .footer__wraper {
     flex-direction: column;
-    
+    gap: 12px;
+    .footer__list {
+      flex-direction: column;
+    }
+    .footer__social {
+      margin-top: 150px;
+      gap: 30px;
+      .social__link {
+        i {
+          font-size: 25px;
+        }
+      }
+    }
   }
 }

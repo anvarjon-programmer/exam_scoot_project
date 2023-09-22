@@ -24,7 +24,7 @@ body {
 // layout
 @import "layout/header", "layout/footer";
 
-@import "pages/deliver", "pages/deliver", "pages/hero", "./pages/about";
+@import "pages/deliver", "pages/deliver", "pages/hero", "./pages/about",'pages/store';
 
 // base
 @import "base/font";
