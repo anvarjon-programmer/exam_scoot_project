@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  // outline: 1px solid red;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Space Mono", monospace;
+  overflow-x: hidden;
+}
+// abstrackt
+@import "abstracts/var", "abstracts/mixin", "abstracts/plaseholder";
+
+// component
+@import "components/card";
+
+// layout
+@import "layout/header", "layout/footer";
+
+@import "pages/deliver", "pages/deliver", "pages/hero", "./pages/about";
+
+// base
+@import "base/font";

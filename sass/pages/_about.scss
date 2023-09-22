@@ -1,0 +1,134 @@
+#about {
+  margin-top: 150px;
+}
+
+.about__total {
+  position: relative;
+  .center {
+    flex-direction: row-reverse;
+  }
+  &-card {
+    @extend %d-flex;
+    margin-top: 120px;
+    justify-content: space-between;
+    &-item {
+      max-width: 450px;
+      &-title {
+        color: #495567;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 100% */
+        letter-spacing: -2.143px;
+        margin-bottom: 24px;
+        // max-width: 450px;
+      }
+      &-text {
+        color: #939caa;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 166.667% */
+      }
+
+      &-btn {
+        width: 180px;
+        height: 53px;
+        background: #fcb72b;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; /* 166.667% */
+        border: none;
+        margin-top: 40px;
+      }
+    }
+
+    .img__side {
+      position: relative;
+      max-width: 500px;
+    }
+    .about__img__sid {
+      border-radius: 50%;
+      width: 100%;
+    }
+    .img_y {
+      position: absolute;
+      left: 400px;
+    }
+    .left2__line-img {
+      position: absolute;
+      top: 30px;
+      left: 250px;
+    }
+    .img_y {
+      position: absolute;
+      left: 500px;
+    }
+    .left2__line-img-first {
+      position: absolute;
+      top: 290px;
+      left: -110px;
+    }
+  }
+  .img__side_center {
+    max-width: 500px;
+    position: relative;
+    .about__img__sid__center {
+      border-radius: 50%;
+      width: 100%;
+    }
+    .left2__line-img_center {
+      position: absolute;
+      top: 70px;
+      left: -135px;
+      z-index: 2;
+    }
+    .img_cercol {
+      position: absolute;
+      left: -140px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about__total {
+    flex-direction: column;
+    .about__total-card {
+      gap: 60px;
+      flex-direction: column-reverse;
+
+      .about__total-card-item {
+        text-align: center;
+        &-title {
+          text-align: center;
+        }
+        .left2__line-img-first {
+          margin-left: 150px;
+        }
+      }
+
+      .img__side {
+        .left2__line-img {
+          right: -50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about__total-card-item {
+    .about__total-card-item-title {
+      font-size: 32px;
+    }
+    .about__card__text {
+      font-size: 15px;
+    }
+    .about__img__sid {
+      max-width: 300px;
+    }
+  }
+}

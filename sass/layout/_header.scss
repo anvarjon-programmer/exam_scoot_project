@@ -1,0 +1,100 @@
+header {
+  
+  width: 100%;
+
+  nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    .navbar {
+      padding: 22px 0;
+      &__check {
+        display: none;
+        &:checked ~ .navbar__open {
+          display: none !important;
+        }
+        &:checked ~ .navbar__close {
+          display: block;
+        }
+        &:checked ~ .navbar__list {
+          transform: translateX(0);
+          visibility: visible;
+        }
+        &:checked ~ .navbar__btn {
+          transform: translateX(0);
+          visibility: visible;
+        }
+      }
+      &__open {
+        display: none;
+      }
+      &__close {
+        display: none;
+      }
+
+      @extend %d-flex;
+      justify-content: space-between;
+      &__list {
+        @extend %d-flex;
+        list-style: none;
+        gap: 32px;
+        flex-basis: 70%;
+        transition: 0.5s linear;
+        &-link {
+          color: #939caa;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 25px; /* 166.667% */
+        }
+      }
+      &__btn {
+        background: #fcb72b;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        border: none;
+        line-height: 25px; /* 166.667% */
+        padding: 15px 20px;
+        transition: 0.5s linear;
+
+        &:hover {
+          background: #fff;
+          border: 1px solid #fcb72b;
+          color: #fcb72b;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    &__list {
+      width: 50%;
+      height: 100vh;
+      padding: 10px 10px;
+      position: fixed;
+      z-index: 2;
+      top: 11%;
+      left: 0;
+      background: #333a44;
+      flex-direction: column;
+      transform: translateX(-150%);
+      visibility: hidden;
+    }
+    &__btn {
+      transform: translateX(-400%);
+      position: fixed;
+      bottom: 24px;
+      z-index: 2;
+    }
+    &__open {
+      display: block !important;
+    }
+  }
+}
