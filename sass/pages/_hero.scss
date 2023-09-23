@@ -44,6 +44,11 @@
         border: none;
         padding: 15px 27px;
         width: 150px;
+        .hero__btn:hover {
+          background: #fff;
+          border: 1px solid #fcb72b;
+          color: #fcb72b;
+        }
       }
       .hero__img {
         position: absolute;

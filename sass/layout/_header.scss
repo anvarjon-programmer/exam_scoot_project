@@ -8,6 +8,12 @@ header {
     z-index: 10;
 
     .navbar {
+      a {
+        img {
+          // width: 107px;
+          margin: 0 auto;
+        }
+      }
       padding: 22px 0;
       &__check {
         display: none;
@@ -34,6 +40,7 @@ header {
       }
 
       @extend %d-flex;
+      gap: 30px;
       justify-content: space-between;
       &__list {
         @extend %d-flex;
@@ -58,7 +65,9 @@ header {
         font-weight: 700;
         border: none;
         line-height: 25px; /* 166.667% */
-        padding: 15px 20px;
+        // padding: 15px 20px;
+        width: 150px;
+        height: 60px;
         transition: 0.5s linear;
 
         &:hover {
@@ -71,15 +80,18 @@ header {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576px) {
   .navbar {
+    img {
+      width: 107px;
+    }
     &__list {
       width: 50%;
       height: 100vh;
       padding: 10px 10px;
       position: fixed;
       z-index: 2;
-      top: 13%;
+      top: 14%;
       left: 0;
       background: #333a44;
       flex-direction: column;
@@ -90,6 +102,7 @@ header {
       transform: translateX(-400%);
       position: fixed;
       bottom: 24px;
+      left: 12px;
       z-index: 2;
     }
     &__open {

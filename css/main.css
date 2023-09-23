@@ -33,7 +33,11 @@ header nav {
 }
 header nav .navbar {
   padding: 22px 0;
+  gap: 30px;
   justify-content: space-between;
+}
+header nav .navbar a img {
+  margin: 0 auto;
 }
 header nav .navbar__check {
   display: none;
@@ -80,7 +84,8 @@ header nav .navbar__btn {
   font-weight: 700;
   border: none;
   line-height: 25px; /* 166.667% */
-  padding: 15px 20px;
+  width: 150px;
+  height: 60px;
   transition: 0.5s linear;
 }
 header nav .navbar__btn:hover {
@@ -89,14 +94,17 @@ header nav .navbar__btn:hover {
   color: #fcb72b;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576px) {
+  .navbar img {
+    width: 107px;
+  }
   .navbar__list {
     width: 50%;
     height: 100vh;
     padding: 10px 10px;
     position: fixed;
     z-index: 2;
-    top: 13%;
+    top: 14%;
     left: 0;
     background: #333a44;
     flex-direction: column;
@@ -107,6 +115,7 @@ header nav .navbar__btn:hover {
     transform: translateX(-400%);
     position: fixed;
     bottom: 24px;
+    left: 12px;
     z-index: 2;
   }
   .navbar__open {
@@ -139,6 +148,11 @@ footer .footer__wraper .footer__list .footer__link {
 footer .footer__wraper .footer__social {
   display: flex;
   list-style: none;
+  gap: 20px;
+}
+footer .footer__wraper .footer__social .social__link i {
+  color: rgba(212, 212, 14, 0.729) !important;
+  font-size: 25px;
 }
 
 @media (max-width: 375px) {
@@ -331,6 +345,11 @@ footer .footer__wraper .footer__social {
   border: none;
   padding: 15px 27px;
   width: 150px;
+}
+#hero .hero__item .hero__title .hero__btn .hero__btn:hover {
+  background: #fff;
+  border: 1px solid #fcb72b;
+  color: #fcb72b;
 }
 #hero .hero__item .hero__title .hero__img {
   position: absolute;
